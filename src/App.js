@@ -1,12 +1,34 @@
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
+import AboutMe from './components/AboutMe/AboutMe';
+import ContactMe from './components/ContactMe/ContactMe';
+import Home from './components/Home/Home';
+import Main from './Layout.js/Main';
 
 function App() {
+  const router = createBrowserRouter([
+    {
+      path:'/',
+      element: <Main></Main>,
+      children: [
+        {
+          path:'/',
+          element: <Home></Home>
+        },
+        {
+          path:'/aboutMe',
+          element: <AboutMe></AboutMe>
+        },
+        {
+          path:'/contactMe',
+          element:<ContactMe></ContactMe>
+        }
+      ]
+    }
+  ])
   return (
     <div>
-      <button className="btn btn-outline">Button</button>
-<button className="btn btn-outline btn-primary">Button</button>
-<button className="btn btn-outline btn-secondary">Button</button>
-<button className="btn btn-outline btn-accent">Button</button>
+          <RouterProvider router = {router}></RouterProvider>
     </div>
   );
 }
