@@ -7,12 +7,18 @@ import MyProjects from '../MyProjects/MyProjects';
 
 const Home = () => {
     return (
-        <div className='mb-20'>
+    <div>
+      <div>
           <Header></Header>
-          <AboutMe></AboutMe>
-          <MyProjects></MyProjects>
-          <ContactMe></ContactMe>
-        </div>
+      </div>
+      <div className='max-w-[1440px] mx-auto'>
+            
+            <AboutMe></AboutMe>
+            <MyProjects></MyProjects>
+            <ContactMe></ContactMe>
+          </div>
+    </div>
+
     );
 };
 

@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import img from '../../assets/p4.jpg'
+import img from '../../assets/g4.webp';
 import { toast } from 'react-toastify';
 
 const ContactMe = () => {
@@ -32,13 +32,13 @@ const ContactMe = () => {
     </form> */}
       
 
-    <div className="hero text-white my-10 py-5  " style={{ backgroundImage: `url(${img})` }}>
+    <div className="hero text-white my-10 py-5 " style={{ backgroundImage: `url(${img})` }}>
   <div className="hero-content flex-col lg:flex-row-reverse">
     <div className="text-center lg:text-left w-full">
-      <h1 className="text-5xl font-bold">Contact Me</h1>
+      <h1 className="text-5xl  font-bold">Contact Me</h1>
       <p className="py-6 text-xl">I am interested in working with any company if they think my skill will be helpful for them.If you want to hire me, Please contact with me via email. </p>
     </div>
-    <div className="card  max-w-sm shadow-2xl bg-base-100 w-full">
+    <div className="card  max-w-sm  shadow-2xl w-full">
       <div className="card-body bg-black text-white">
   <form ref={form} onSubmit={sendEmail}>
 

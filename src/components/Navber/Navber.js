@@ -14,11 +14,12 @@ function Navber() {
          
           </Nav>
           <Nav className='text-decoration-none'>
-            <Link className='text-decoration-none text-white px-3 my-2' to='/'>Portfolio</Link>
-            <Link className='text-decoration-none text-white px-3 my-2'  to='/aboutMe'>About me</Link>
-            <Link className='text-decoration-none text-white px-3 my-2' to='/contactMe'>Contact me</Link>
-            <Link className='text-decoration-none text-white px-3 my-2' to='/service'>Service</Link>
-            <Link className='text-decoration-none text-white px-3 my-2' to='/blog'>blog</Link>
+            <Link   to='/' className='text-decoration-none text-white px-3 my-2'>Portfolio</Link>
+            <Link to='/aboutMe' className='text-decoration-none text-white px-3 my-2'  >About me</Link>
+            <Link to='/contactMe'  className='text-decoration-none text-white px-3 my-2' >Contact me</Link>
+            <Link  to='/service' className='text-decoration-none text-white px-3 my-2' >Service</Link>
+            <Link  to='/blog'  className='text-decoration-none text-white px-3 my-2'>blog</Link>
+          
           </Nav>
         </Navbar.Collapse>
       </Container>

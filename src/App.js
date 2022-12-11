@@ -2,6 +2,7 @@ import { Toaster } from 'react-hot-toast';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
 import AboutMe from './components/AboutMe/AboutMe';
+import Blog from './components/Blog/Blog';
 import ContactMe from './components/ContactMe/ContactMe';
 import Home from './components/Home/Home';
 import Main from './Layout.js/Main';
@@ -23,12 +24,16 @@ function App() {
         {
           path:'/contactMe',
           element:<ContactMe></ContactMe>
+        },
+        {
+          path:'/blog',
+          element: <Blog></Blog>
         }
       ]
     }
   ])
   return (
-    <div>
+    <div className='bg-black'>
           <RouterProvider router = {router}></RouterProvider>
           <Toaster></Toaster>
     </div>
