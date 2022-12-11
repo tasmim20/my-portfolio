@@ -8,8 +8,8 @@ const Footer = () => {
   <div className="grid grid-flow-col gap-4 text-white">
     <Link to='/aboutMe' className="link link-hover text-white">About me</Link> 
     <Link to='contactMe' className="link link-hover  text-white">Contact</Link> 
-    <Link to='/service' className="link link-hover  text-white">Jobs</Link> 
-    <Link to='/' className="link link-hover  text-white ">Press kit</Link>
+    <Link to='/service' className="link link-hover  text-white">Projects</Link> 
+    <Link to='/' className="link link-hover  text-white ">Skills</Link>
   </div> 
   <div>
     <div className="grid grid-flow-col gap-4">

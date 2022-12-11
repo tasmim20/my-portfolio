@@ -5,6 +5,9 @@ import AboutMe from './components/AboutMe/AboutMe';
 import Blog from './components/Blog/Blog';
 import ContactMe from './components/ContactMe/ContactMe';
 import Home from './components/Home/Home';
+import CodePlanner from './components/Projects/CodePlanner';
+import Journalist from './components/Projects/Journalist';
+import Sellcell from './components/Projects/Sellcell';
 import Main from './Layout.js/Main';
 
 function App() {
@@ -28,7 +31,20 @@ function App() {
         {
           path:'/blog',
           element: <Blog></Blog>
+        },
+        {
+          path:'/sellcell',
+          element:<Sellcell></Sellcell>
+        },
+        {
+          path:'/codePlanner',
+          element: <CodePlanner></CodePlanner>
+        },
+        {
+          path:'/journalist',
+          element: <Journalist></Journalist>
         }
+
       ]
     }
   ])

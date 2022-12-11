@@ -4,8 +4,8 @@ import bg from '../../assets/w4.jpg';
 
 const AboutMe = () => {
     return (
-        <div className='my-10'>
-<div className="hero  text-white  " style={{ backgroundImage: `url(${bg})` }}>
+        <div className='my-16'>
+<div className="hero  text-white rounded-lg  " style={{ backgroundImage: `url(${bg})` }}>
   <div className="hero-content flex-col lg:flex-row-reverse">
     <img src={girl} className="rounded-lg-red shadow-blue-700" />
     <div>

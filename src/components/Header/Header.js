@@ -22,7 +22,7 @@ const Header = () => {
      
      <div className='flex justify-around'> 
       <Link to='/contactMe'><button className="btn btn-active btn-secondary ">Contact me</button></Link>
-   <a href='Tasmim Rahman4.pdf' download='Tasmim Rahman'> <button className="btn btn-active btn-success"> Download Resume </button></a>
+   <a href='Tasmim7.pdf' download='Tasmim Rahman'> <button className="btn btn-active btn-success"> Download Resume </button></a>
       </div>
     </div>
   </div>
