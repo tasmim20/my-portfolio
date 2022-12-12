@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 
 const MyProjects = () => {
     return (
-     <div className='my-10 py-8 rounded-lg' style={{ backgroundImage: `url(${img})` }}>
+     <div className='my-10 py-8 rounded-lg' style={{ backgroundImage: `url(${img})` }} >
 
         <h2 className='text-center text-4xl pb-8 font-bold text-white'>My Projects</h2>
            <div className='grid lg:grid-cols-3 mx-auto sm:grid-cols-1 md:grid-cols-2 gap-5 text-white'  >

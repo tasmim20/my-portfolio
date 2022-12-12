@@ -7,7 +7,9 @@ import ContactMe from './components/ContactMe/ContactMe';
 import Home from './components/Home/Home';
 import CodePlanner from './components/Projects/CodePlanner';
 import Journalist from './components/Projects/Journalist';
-import Sellcell from './components/Projects/Sellcell';
+import Sellcell from './components/Projects/Sellcell/Sellcell';
+
+
 import Main from './Layout.js/Main';
 
 function App() {

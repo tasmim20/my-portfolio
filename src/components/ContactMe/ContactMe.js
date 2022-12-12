@@ -1,7 +1,8 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import img from '../../assets/g4.webp';
-import { toast } from 'react-toastify';
+import toast, { Toaster } from 'react-hot-toast';
+
 
 const ContactMe = () => {
   const form = useRef();
@@ -12,24 +13,17 @@ const ContactMe = () => {
     emailjs.sendForm('service_tgpjuvd', 'template_lp0nrbb', form.current, 'uboDGEfEJOHfML08c')
       .then((result) => {
           console.log(result.text);
-          toast.error('Message Sent Successfully');
+         
+          toast.success('Message sent successfully')
       }, (error) => {
           console.log(error.text);
       });
+      useRef.current.text = "";
   };
 
   return (
 <div>
-{/* <form ref={form} onSubmit={sendEmail}>
-        <h2>contact form</h2>
-      <label>Name</label>
-      <input type="text" name="user_name" />
-      <label>Email</label>
-      <input type="email" name="user_email" />
-      <label>Message</label>
-      <textarea name="message" />
-      <input type="submit" value="Send" />
-    </form> */}
+
       
 
     <div className="hero text-white my-10 py-5 " style={{ backgroundImage: `url(${img})` }}>
@@ -60,9 +54,8 @@ const ContactMe = () => {
           </label>
           <textarea name="message" className="textarea textarea-dark w-full text-white" placeholder="your message"></textarea>
         </div>
-           
-        {/* <button type='input' value='send' className="btn btn-active px-4 my-4 btn-secondary">Submit</button> */}
-        <input className='btn btn-active btn-secondary w-full rounded-lg my-3' type="submit" value="Send" />
+      
+        <input className='btn btn-active btn-secondary w-full rounded-lg my-3' type="submit" value="Send" onClick="this.form.reset()" />
 
 
   </form>
