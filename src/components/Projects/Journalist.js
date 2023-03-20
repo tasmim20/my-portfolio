@@ -1,7 +1,7 @@
 import React from 'react';
-import code2 from '../../assets/jour2.png';
-import code3 from '../../assets/jour3.png';
-import code1 from '../../assets/journalist.png';
+import code2 from '../../assets/bloggg.png';
+import code3 from '../../assets/harmlic.png';
+import code1 from '../../assets/harmic-web(5).png';
 import bg from '../../assets/g5.webp'
 
 const Journalist = () => {
@@ -11,17 +11,17 @@ const Journalist = () => {
           <div  className=' grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-10 ' >
         
          <div className="card card-compact w-96  shadow-xl bg-black">
-  <figure><img src={code1} alt="Shoes" /></figure>
+  <figure className='h-52'><img src={code1} alt="Shoes" /></figure>
   <h2 className="text-white text-center  text-2xl font-bold">Home</h2>
 </div>
 <div className="card card-compact w-96 bg-base-100 shadow-xl bg-black">
-  <figure><img src={code2} alt="Shoes" /></figure>
+  <figure className='h-52'><img src={code2} alt="Shoes" /></figure>
   <div className="card-body">
     <h2 className="text-white text-2xl font-bold text-center">Blog</h2> 
   </div>
 </div>
 <div className="card card-compact w-96 bg-base-100 shadow-xl bg-black">
-  <figure><img src={code3} alt="Shoes" /></figure>
+  <figure className='h-52'><img src={code3} alt="Shoes" /></figure>
   <div className="card-body">
     <h2 className="text-white text-2xl font-bold text-center">Details page</h2>
   </div>
@@ -34,8 +34,8 @@ const Journalist = () => {
           <h2 className=' text-3xl'>Projects Description: </h2>
           <ul>
             <h3>Features-</h3>
-            <li>1.A website for journalist</li>
-            <li>2.Anyone visit this website and can read news. If they want to get daily update from a categroy then they pay to money </li>
+            <li>1.E-commerce website</li>
+            <li>2.User can add blogs and manage their blogs </li>
             <li>3.Here firebase authentication system is applied for Authorization</li>
             <li>4.Call to action</li>
             <li>5.Responsive Website</li>
@@ -46,9 +46,9 @@ const Journalist = () => {
 
         </div>
         <div className='text-center'>
-          <a href="https://github.com/tasmim20/journalist-client"> <button className="btn btn-primary me-2">Client</button></a>
-           <a href="https://github.com/tasmim20/journalist-server"> <button className="btn btn-info me-2">Server</button></a>
-          <a href="https://journalist-5a23f.web.app">  <button className="btn btn-success">Live-link</button></a>
+          <a href="https://github.com/tasmim20/harmic-client"> <button className="btn btn-primary me-2">Client</button></a>
+           <a href="https://github.com/tasmim20/harmic-server"> <button className="btn btn-info me-2">Server</button></a>
+          <a href="https://harmic-client.firebaseapp.com/">  <button className="btn btn-success">Live-link</button></a>
            
 
         </div>
